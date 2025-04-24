@@ -3,32 +3,17 @@
 
 An AI-powered Web Research Agent that automatically searches the web, scrapes useful content, analyzes it, and provides comprehensive answers to user queries.
 
-## 🚀 Features
+## Features
 
-- 🔎 Extracts keywords from user queries using LLM
-- 🌐 Searches the web using DuckDuckGo
-- 🕷️ Scrapes web pages with BeautifulSoup
-- 🧠 Summarizes and synthesizes content with LLaMA-3 via Groq
-- 🖥️ Offers both CLI and Streamlit Web Interface
+-  Extracts keywords from user queries using LLM
+-  Searches the web using DuckDuckGo
+-  Scrapes web pages with BeautifulSoup
+-  Summarizes and synthesizes content with LLaMA-3 via Groq
+-  Offers both CLI and Streamlit Web Interface
 
-## 🧱 Architecture Overview
+## Architecture Overview
 
-flowchart TD
-    A[User Query] --> B[Query Analyzer (LLM)]
-    B --> C[Search Tool (DuckDuckGo)]
-    C --> D[Web Scraper (BeautifulSoup)]
-    D --> E[Content Analyzer (LLM)]
-    E --> F[Information Synthesizer (LLM)]
-    F --> G[Final Answer]
-
-
-Project structure
-├── main.py           # CLI app
-├── app.py            # Streamlit app
-├── agent.py          # Core agent logic
-├── tools.py          # Tool definitions
-├── .env              # API keys 
-├── requirements.txt  # Python dependencies
+![alt text](web_research.png)
 
 
 
@@ -64,16 +49,11 @@ streamlit run app.py
 
 
 Core Tools Used
-Tool
-Description
-LLM (Groq LLaMA-3)
-Keyword extraction, content summarization
-DuckDuckGo Search
-Fetches top web pages based on keywords
-BeautifulSoup
-Scrapes and extracts clean text from web pages
-Streamlit
-Web-based interface for research interaction
+Tool                                Description
+LLM (Groq LLaMA-3)                 Keyword extraction, content summarization
+DuckDuckGo Search                  Fetches top web pages based on keywords
+BeautifulSoup                      Scrapes and extracts clean text from web pages
+Streamlit                          Web-based interface for research interaction
 
 
 
