@@ -17,44 +17,40 @@ An AI-powered Web Research Agent that automatically searches the web, scrapes us
 
 
 
-⚙️ Setup
-Clone the repository:
+Setup
+Follow the steps below to set up and run the Web Research Agent project.
+1. Clone the Repository
 
 git clone https://github.com/yourusername/web-research-agent.git
 
 
-
-Create and activate a virtual environment:
+2. Create and Activate a Virtual Environment
 
 python -m venv venv
-source venv/bin/activate  # or venv\Scripts\activate on Windows
+venv\Scripts\activate
 
-
-Install dependencies:
+3. Install Dependencies
 
 pip install -r requirements.txt
 
 
-Create a .env file and add your Groq API Key:
+4. Add Your API Key
+Create a .env file in the root directory and add your Groq API Key:
 
 GROQ_API_KEY=your-groq-api-key
 
-
+5. Run the Project
 Run the CLI version:
 python main.py
-
 
 Or launch the Streamlit UI:
 streamlit run app.py
 
 
-Core Tools Used
-Tool                                Description
-LLM (Groq LLaMA-3)                 Keyword extraction, content summarization
-DuckDuckGo Search                  Fetches top web pages based on keywords
-BeautifulSoup                      Scrapes and extracts clean text from web pages
-Streamlit                          Web-based interface for research interaction
+Documentation pdf is attached in git repo
 
 
+Deployed the web research agent project to streamlit for public access and hereis the live link
 
-
+This is the web research live link
+https://web-agent-demo.streamlit.app/
