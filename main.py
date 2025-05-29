@@ -9,7 +9,6 @@ from tools import llm
 # print("----------------",res)
 
 
-
 if __name__ == "__main__":
     user_query = input("Enter your research question: ")
 

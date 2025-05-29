@@ -14,7 +14,6 @@ load_dotenv()  # This loads environment variables from .env
 llm = ChatGroq(groq_api_key = os.getenv("GROQ_API_KEY"), model_name = "llama-3.3-70b-versatile")
 
 
-
 # Tool 1: Query Analyzer
 def analyze_query(query: str) -> str:
     prompt = f"Extract the best search keywords from this question:\n'{query}'\nKeywords:"
